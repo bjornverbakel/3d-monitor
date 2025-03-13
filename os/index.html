@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operating System</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/scripts.js" defer></script>
+</head>
+
+<body>
+    <!-- 
+    <div class="overlay"></div>
+    -->
+
+    <!-- Main desktop -->
+    <main class="desktop not-selectable">
+        <div class="computerApp app-box">
+            <img class="icon-l" src="icons/computer-l.png" alt="computer">
+            My Computer
+        </div>
+        <div class="fileExplorerApp app-box">
+            <img class="icon-l" src="icons/file-l.png" alt="file">
+            File Explorer
+        </div>
+        <div class="recycleBinApp app-box">
+            <img class="icon-l" src="icons/recycle-bin-l.png" alt="recycle bin">
+            Recycle Bin
+        </div>
+        <!--
+        <div class="portfolioApp app-box">
+            <img class="icon-l" src="icons/file-filled-l.png" alt="filled file">
+            <img class="icon-l shortcut-icon" src="icons/shortcut.png" alt="shortcut">
+            Portfolio
+        </div>
+        -->
+        <div class="internetExplorerApp app-box">
+            <img class="icon-l" src="icons/ie-l.png" alt="internet explorer">
+            <img class="icon-l shortcut-icon" src="icons/shortcut.png" alt="shortcut">
+            Portfolio
+        </div>
+        <div class="readMeApp app-box">
+            <img class="icon-l" src="icons/textfile-l.png" alt="notepad file">
+            <img class="icon-l shortcut-icon" src="icons/shortcut.png" alt="shortcut">
+            README.txt
+        </div>
+    </main>
+
+    <!-- Window: README.txt -->
+    <section id="readMeWindow" class="window outset-deep not-selectable">
+        <div class="title-bar gradient-hor outset-deep">
+            <div class="title-bar-left">
+                <img class="icon-s" src="icons/textfile-s.png" alt="notepad file">
+                README.txt
+            </div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="controls-container outset-shallow">
+            <div class="controls-left">
+                <div class="ver-line"></div>
+                <button disabled class="control-button">
+                    File
+                </button>
+                <button disabled class="control-button">
+                    Edit
+                </button>
+                <button disabled class="control-button">
+                    Search
+                </button>
+                <button disabled class="control-button">
+                    Help
+                </button>
+            </div>
+        </div>
+        <div class="text-section inset-deep">
+            <a href="https://git.fhict.nl/I529052/portfolio" target="_blank" rel="noopener">
+                <h3 id="operating-system-portfolio-website">Operating System Portfolio Website</h3>
+            </a>
+            <p>This is a portfolio website in the style of a retro operating system. It includes various openable
+                applications, that are displayed inside their individual windows. The opened applications are displayed
+                on the bottom taskbar. The website is shown on top of a 3D-model of a monitor, with the help of <a
+                    href="https://github.com/pmndrs/drei">ThreeJS Drei</a>. Furthermore, the website contains a comment
+                system in the form of a guestbook.</p>
+            <h4 id="features">Features</h4>
+            <ul>
+                <li>Fully interactable windows</li>
+                <li>Taskbar that shows opened application</li>
+                <li>Fullscreen mode</li>
+                <li>3D-environment</li>
+                <li>File Explorer directory navigation system</li>
+                <li>Comment system</li>
+                <li>Account login/registration</li>
+            </ul>
+            <h4 id="demo">Demo</h4>
+            <p>View a demo <a href="https://i529052.hera.fontysict.net/">here</a>.</p>
+            <h4 id="installation">Installation</h4>
+            <ol>
+                <li>Install Drei</li>
+            </ol>
+            <pre><code class="lang-bash">  npm <span class="hljs-keyword">install</span>
+            </code></pre>
+            <ol>
+                <li>Build your project when ready</li>
+            </ol>
+            <pre><code class="lang-bash">  npm <span class="hljs-keyword">run</span><span class="bash"> build</span>
+            </code></pre>
+            <ol>
+                <li>
+                    <p>Install <a href="https://www.apachefriends.org/index.html">XAMPP</a></p>
+                </li>
+                <li>
+                    <p>Open XAMPP.</p>
+                </li>
+                <li>
+                    <p>Open your XAMPP folder by pressing the <code>Explorer</code> button on the control panel</p>
+                </li>
+                <li>
+                    <p>Drag the project file into the <code>htdocs</code> folder</p>
+                </li>
+                <li>
+                    <p>Start the <code>Apache</code> and <code>MySQL</code> modules</p>
+                </li>
+                <li>
+                    <p>Search for <a href="localhost/project-filename">localhost/[project-filename]</a> in your browser
+                    </p>
+                </li>
+            </ol>
+            <h4 id="license">License</h4>
+            <p><a href="https://git.fhict.nl/I529052/portfolio">Operating System Portfolio Website</a> © 2024 by <a
+                    href="https://git.fhict.nl/I529052">Bjorn Verbakel</a> is licensed under <a
+                    href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1">CC BY-NC 4.0</a></p>
+        </div>
+    </section>
+
+    <!-- Window: File Explorer -->
+    <section id="fileExplorerWindow" class="window outset-deep not-selectable">
+        <div class="title-bar gradient-hor outset-deep">
+            <div class="title-bar-left">
+                <img class="icon-s" src="icons/file-s.png" alt="file">
+                File Explorer
+            </div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="adress outset-shallow">
+            <div class="ver-line"></div>
+            <label for="adress">Adress</label>
+            <input id="adress" name="adress" type="text"></input>
+            <button id="adressBtn">Go!</button>
+        </div>
+        <div class="controls-container outset-shallow">
+            <div class="ver-line"></div>
+            <div class="controls-left">
+                <button disabled class="control-button">
+                    File
+                </button>
+                <button disabled class="control-button">
+                    Edit
+                </button>
+                <button disabled class="control-button">
+                    View
+                </button>
+                <button disabled class="control-button">
+                    Go
+                </button>
+                <button disabled class="control-button">
+                    Favorites
+                </button>
+                <button disabled class="control-button">
+                    Tools
+                </button>
+                <button disabled class="control-button">
+                    Help
+                </button>
+            </div>
+            <div class="controls-right controls">
+                <img class="icon-s backward" src="icons/arrow.svg" alt="file" style="transform: rotate(-90deg);">
+                <img class="icon-s forward" src="icons/arrow.svg" alt="file" style="transform: rotate(90deg);">
+            </div>
+        </div>
+        <div class="fe-container">
+            <div class="fe-right outset-shallow">
+
+                <!-- No path -->
+                <div id="dirNone" class="fe-files inset-deep">
+                    <!--
+                    <div id="fePortfolioBtn" class="fe-file fe-directory" data-directory="dirPortfolio">
+                        <img class="icon-m" src="icons/file-filled-m.png" alt="filled file">
+                        Portfolio
+                    </div>
+                    -->
+                    <div class="fe-file readMeApp">
+                        <img class="icon-m" src="icons/textfile-m.png" alt="notepad file">
+                        README.txt
+                    </div>
+                    <div class="fe-file internetExplorerApp">
+                        <img class="icon-m" src="icons/ie-m.png" alt="internet explorer">
+                        <img class="icon-m shortcut-icon" src="icons/shortcut.png" alt="shortcut">
+                        Portfolio
+                    </div>
+                </div>
+
+                <!-- Portfolio -->
+                <!--
+                <div id="dirPortfolio" class="fe-files inset-deep">
+                    <div class="fe-file">
+                        <img class="icon-m" src="icons/textfile-m.png" alt="notepad file">
+                        LO1.txt
+                    </div>
+                    <div class="fe-file">
+                        <img class="icon-m" src="icons/textfile-m.png" alt="notepad file">
+                        LO2.txt
+                    </div>
+                    <div class="fe-file">
+                        <img class="icon-m" src="icons/textfile-m.png" alt="notepad file">
+                        LO3.txt
+                    </div>
+                    <div class="fe-file">
+                        <img class="icon-m" src="icons/textfile-m.png" alt="notepad file">
+                        LO4.txt
+                    </div>
+                    <div class="fe-file">
+                        <img class="icon-m" src="icons/textfile-m.png" alt="notepad file">
+                        LO5.txt
+                    </div>
+                </div>
+                -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Window: Internet Explorer -->
+    <section id="internetExplorerWindow" class="window outset-deep not-selectable">
+        <div class="title-bar gradient-hor outset-deep">
+            <div class="title-bar-left">
+                <img class="icon-s" src="icons/ie-s.png" alt="file">
+                Internet Explorer - Portfolio
+            </div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="adress outset-shallow">
+            <div class="ver-line"></div>
+            <label for="adress">Adress</label>
+            <input id="adress" name="adress" type="text"></input>
+            <button id="adressBtn">Go!</button>
+            <button title="refreshBtn" id="refreshBtn">
+                <img src="icons/refresh.png" alt="">
+            </button>
+        </div>
+        <div class="ie-website">
+            <iframe id="ie-frame" title="portfolio-website" src="portfolio-website/index.php" frameborder="0"></iframe>
+        </div>
+    </section>
+
+    <!-- Startmenu -->
+    <nav class="startmenu not-selectable">
+        <div class="startmenu-bar gradient-ver outset-deep">
+        </div>
+        <div class="startmenu-right">
+            <div class="startmenu-appwindow outset-deep">
+                <div class="startmenu-appbox inset-deep">
+                    <div class="fileExplorerApp startmenu-app">
+                        <img class="icon-m" src="icons/file-m.png" alt="file">
+                        File Explorer
+                    </div>
+                    <!--
+                    <div class="portfolioApp startmenu-app">
+                        <img class="icon-m" src="icons/file-filled-m.png" alt="filled file">
+                        <img class="icon-m shortcut-icon" src="icons/shortcut.png" alt="shortcut">
+                        Portfolio
+                    </div>
+                    -->
+                    <div class="internetExplorerApp startmenu-app">
+                        <img class="icon-m" src="icons/ie-m.png" alt="internet explorer">
+                        <img class="icon-m shortcut-icon" src="icons/shortcut.png" alt="shortcut">
+                        Portfolio
+                    </div>
+                    <div class="readMeApp startmenu-app">
+                        <img class="icon-m" src="icons/textfile-m.png" alt="notepad file">
+                        <img class="icon-m shortcut-icon" src="icons/shortcut.png" alt="shortcut">
+                        README.txt
+                    </div>
+                </div>
+            </div>
+            <div class="startmenu-optionwindow outset-deep">
+                <button class="startmenu-option outset-deep">
+                    <img class="icon-m" src="icons/computer-boot-m.png" alt="computer">
+                    Shut down...
+                </button>
+                <button class="startmenu-option outset-deep">
+                    <img class="icon-m" src="icons/keys-m.png" alt="keys">
+                    Log out
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="volume-menu outset-deep">
+        <div class="volume-icon">
+            <img class="icon-s" src="icons/volume-s.png" alt="volume">
+        </div>
+        <label for="volumeSlider">Low</label>
+        <input id="volumeSlider" class="has-box-indicator" type="range" min="0" max="100" value="50"
+            style="width: 140px">
+        <label for="volumeSlider">High</label>
+    </div>
+
+    <!-- Taskbar -->
+    <header class="taskbar outset-deep not-selectable">
+        <div class="taskbar-left">
+            <button id="startButton" class="taskbar-box outset-deep toggle-button">
+                Start
+            </button>
+            <div class="ver-line"></div>
+        </div>
+
+        <div class="taskbar-right">
+            <div class="taskbar-box inset-deep">
+                <span id="time">--:--</span>
+                <img class="icon-s" src="icons/clock-s.png" alt="clock">
+            </div>
+            <div class="taskbar-box inset-deep">
+                <span id="date">--/--/--</span>
+                <img class="icon-s" src="icons/calendar-s.png" alt="calender">
+            </div>
+            <button id="volumeButton" class="taskbar-box outset-deep toggle-button">
+                <div class="volume-icon">
+                    <img class="icon-s" src="icons/volume-s.png" alt="volume">
+                </div>
+            </button>
+        </div>
+    </header>
+
+    <!-- Fullscreen button -->
+    <button class="js-toggle-fullscreen-btn toggle-fullscreen-btn" aria-label="Enter fullscreen mode" hidden>
+        <svg class="toggle-fullscreen-svg" width="28" height="28" viewBox="-2 -2 28 28">
+            <g class="icon-fullscreen-enter">
+                <path d="M 2 9 v -7 h 7" />
+                <path d="M 22 9 v -7 h -7" />
+                <path d="M 22 15 v 7 h -7" />
+                <path d="M 2 15 v 7 h 7" />
+            </g>
+
+            <g class="icon-fullscreen-leave">
+                <path d="M 24 17 h -7 v 7" />
+                <path d="M 0 17 h 7 v 7" />
+                <path d="M 0 7 h 7 v -7" />
+                <path d="M 24 7 h -7 v -7" />
+            </g>
+        </svg>
+    </button>
+
+</body>
+
+</html>
