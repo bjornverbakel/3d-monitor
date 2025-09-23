@@ -399,11 +399,8 @@ function App() {
         </Canvas>
       </div>
       <div className='controls'>
-        <a href="os/index.html">
+        <a href="https://3d-monitor-meiv.vercel.app/">
           <button className='alt-version'>Go to <span className='bold'>OS</span> only version</button>
-        </a>
-        <a href="os/portfolio-website/index.php">
-          <button className='alt-version'>Go to <span className='bold'>PORTFOLIO</span> only version</button>
         </a>
         <div className='interactions'>
           <button id='expandBtn' onClick={handleCanvasClick}><img src={expandBtnImage} alt="expand" /></button>
