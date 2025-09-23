@@ -185,7 +185,7 @@ const Model = memo(({ isRotating, ...props }) => {
             occlude="blending"
           >
             <iframe
-              src="os/index.html"
+              src="https://3d-monitor-meiv-ls645h5ig-bjorns-projects-5466d641.vercel.app/"
               title="OS"
             >
             </iframe>
